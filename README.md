@@ -13,6 +13,6 @@ This component will also go one step further and add a fade animation to the chi
 * https://github.com/reactjs/react-transition-group
 
 
-## Typescript Gotcha
+## TypeScript Gotcha
 This component passes "undefined" as a generic to the <Transition> component or the TS compiler will throw an error for the callback arguments on certain handlers. Tracking this issue below:
 * https://github.com/reactjs/react-transition-group/issues/729#issuecomment-866710370
