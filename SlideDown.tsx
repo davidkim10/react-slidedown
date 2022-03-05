@@ -17,7 +17,7 @@ interface Props {
   unmountOnExit?: boolean;
 }
 
-const SlideDown: React.FC<Props> = ({
+export const SlideDown: React.FC<Props> = ({
   children,
   className,
   isOpen = false,
@@ -105,5 +105,3 @@ const SlideDown: React.FC<Props> = ({
     </Transition>
   );
 };
-
-export default SlideDown;
