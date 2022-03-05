@@ -3,7 +3,7 @@ import { Transition, CSSTransition } from "react-transition-group";
 import { getClassNames } from "./utils";
 import "./SlideDown.css";
 
-interface Props {
+interface ISlideDownProps {
   className?: string;
   isOpen: boolean;
   onEnter?: (node: HTMLDivElement) => void;
@@ -17,7 +17,7 @@ interface Props {
   unmountOnExit?: boolean;
 }
 
-export const SlideDown: React.FC<Props> = ({
+export const SlideDown: React.FC<ISlideDownProps> = ({
   children,
   className,
   isOpen = false,
