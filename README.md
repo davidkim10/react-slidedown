@@ -7,3 +7,12 @@ Using pure CSS to transition height can get tricky. This component will dynamica
 I did not find many solutions that transition height dynamically using react-transition-group in the FE community so I wanted to share.
 
 This component will also go one step further and add a fade animation to the children during the slide effect.
+
+## Dependency
+* https://reactcommunity.org/react-transition-group/
+* https://github.com/reactjs/react-transition-group
+
+
+## Typescript Gotcha
+This component passes "undefined" as a generic to the <Transition> component or the TS compiler will throw an error for the callback arguments on certain handlers. Tracking this issue below:
+* https://github.com/reactjs/react-transition-group/issues/729#issuecomment-866710370
